@@ -1,4 +1,3 @@
-@prefix colour: <https://example.org/colour-with-hierarchy/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -17,9 +16,9 @@ book:cooking a skos:Concept ;
 
 book:fiction a skos:Concept ;
     skos:prefLabel "fiction"@en, "Belletristik"@de ;
-    skos:narrower book:historical novel ;
+    skos:narrower book:historical-novel ;
     skos:topConceptOf book: .
     
-book:historical novel a skos:Concept ;
-    skos:prefLabel "historical novel"@en, "Historischer Roman"@de ;
+book:historical-novel a skos:Concept ;
+    skos:prefLabel "historical-novel"@en, "Historischer Roman"@de ;
     skos:inScheme book: .
