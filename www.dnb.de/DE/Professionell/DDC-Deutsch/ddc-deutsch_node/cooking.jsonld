@@ -13,6 +13,14 @@
       "Koch Buch"
     ]
   },
+  "hiddenLabel": {
+    "en": [
+      "hidden Note"
+    ],
+    "de": [
+      "verstecke Notiz"
+    ]
+  },
   "inScheme": [
     {
       "id": "https://www.dnb.de/DE/Professionell/DDC-Deutsch/ddc-deutsch_node/",
