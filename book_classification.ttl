@@ -1,0 +1,25 @@
+@prefix colour: <https://example.org/colour-with-hierarchy/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+book: a skos:ConceptScheme ;
+    dct:title "Various Book Categories"@en, "Verschiedene Buchkategorien"@de ;
+    dct:creator "Sebastian Jung"@de ;
+    dct:created "2023-08-23"^^xsd:date ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    skos:hasTopConcept book:cooking, book:fiction .
+
+book:cooking a skos:Concept ;
+    skos:prefLabel "Kochbuch"@de, "Cookbook"@en ;
+    skos:altLabel "Koch Buch"@de, "cookery book"@en ;
+    skos:topConceptOf book: .
+
+book:fiction a skos:Concept ;
+    skos:prefLabel "fiction"@en, "Belletristik"@de ;
+    skos:narrower book:historical novel ;
+    skos:topConceptOf book: .
+    
+book:historical novel a skos:Concept ;
+    skos:prefLabel "historical novel"@en, "Historischer Roman"@de ;
+    skos:inScheme book: .
