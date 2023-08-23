@@ -13,6 +13,8 @@ book: a skos:ConceptScheme ;
 book:cooking a skos:Concept ;
     skos:prefLabel "Kochbuch"@de, "Cookbook"@en ;
     skos:altLabel "Koch Buch"@de, "cookery book"@en ;
+    skos:changeNote "wurde am 20.8 in die Bibliothek geliefert"@de, "has been delivered to the library on August 20"@en ;
+    skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:topConceptOf book: .
 
 book:fiction a skos:Concept ;
