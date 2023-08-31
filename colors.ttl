@@ -52,7 +52,7 @@ classification:DI a skos:Concept ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:topConceptOf classification: .
 
-Sclassification:GA a skos:Concept ;
+classification:GA a skos:Concept ;
     skos:prefLabel "GA_Geowissenschaften, Astrophysik"@de, "GA_Geosciences, Astro physics"@en ;
     skos:altLabel "Geographie, Astronomie"@de, "Geography, Astronomy"@en ;
     skos:notation "GA"@de, "GA"@en ;
