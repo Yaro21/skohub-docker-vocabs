@@ -1,105 +1,60 @@
-@prefix Systematik: <https://www.dnb.de/DE/Professionell/DDC-Deutsch> .
+@prefix classification: <https://www.dnb.de/DE/Professionell/DDC-Deutsch> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-Systematik: a skos:ConceptScheme ;
+classification: a skos:ConceptScheme ;
     dct:title "Aufstellungssystematik "@de, "Classification"@en ;
     dct:alternative "Institutsfächersystematik"@de ;
     dct:description "Diese SKOS-Klassifikation basiert auf Fantasie"@de ;
     dct:creator "Seb Jung"@de ;
     dct:created "2023-08-31"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept Systematik:A, Systematik:BC, Systematik:DI, Systematik:GA, Systematik:M .
+    skos:hasTopConcept classification:A, classification:BC, classification:DI, classification:GA .
 
-Systematik:A a skos:Concept ;
+classification:A a skos:Concept ;
     skos:prefLabel "A_Allgemeines"@de, "A_General"@en ;
     skos:altLabel "A_Universelles"@de, "A_Universal"@en ;
     skos:notation "A0-A2"@de, "A0-A2"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
-    skos:narrower Systematik:A0, Systematik:A1, Systematik:A2 ;
-    skos:topConceptOf Systematik: .
+    skos:narrower classification:A0, classification:A1, classification:A2 ;
+    skos:topConceptOf classification: .
 
-Systematik:A0 a skos:Concept ;
+classification:A0 a skos:Concept ;
     skos:prefLabel "A0_Verschiedenes"@de, "A0_Various"@en ;
     skos:altLabel "A0_Diverses"@de, "A0_Miscellaneous"@en ;
     skos:notation "A0"@de, "A0"@en ;
-    skos:inScheme Systematik: .
+    skos:inScheme classification: .
 
-Systematik:A1 a skos:Concept ;
+classification:A1 a skos:Concept ;
     skos:prefLabel "A1_Lexika_alternative_Nachschlagewerke"@de, "A1_Lexica, Alternative reference books"@en ;
     skos:altLabel "A1_Enzyklopädie, Kompendium"@de, "A1_Encyclopedia, Compendium"@en ;
     skos:notation "A1"@de, "A1"@en ;
-    skos:inScheme Systematik: .
+    skos:inScheme classification: .
 
-Systematik:A2 a skos:Concept ;
+classification:A2 a skos:Concept ;
     skos:prefLabel "A2_Wörterbücher"@de, "A2_Dictionaries"@en ;
     skos:altLabel "A2_Vokabularium"@de, "A2_Vocabulary"@en ;
     skos:notation "A2"@de, "A2"@en ;
-    skos:inScheme Systematik: .
+    skos:inScheme classification: .
 
-Systematik:BC a skos:Concept ;
+classification:BC a skos:Concept ;
     skos:prefLabel "BC_Biowissenschaften, Chemie, Kernchemie, Pharmamedizin"@de, "BC_Bioscience, Chemistry, Nuclear chemistry, Pharmaceutical medicine"@en ;
     skos:altLabel "BC_Biologie, Chemie, Medizin"@de, "BC_biology, chemistry, medicine"@en ;
     skos:notation "BC"@de, "BC"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
-    skos:topConceptOf Systematik: .
+    skos:topConceptOf classification: .
 
-Systematik:DI a skos:Concept ;
+classification:DI a skos:Concept ;
     skos:prefLabel "DI_Datenverarbeitung, Informatik, Informationsverarbeitung, Programmiersprache, Künstliche Intelligenz"@de, "DI_Data proceesing, Informatics, Information processing, Programming language, Artificial intelligence"@en ;
     skos:altLabel "DI_Dateninformatik, KI"@de, "DI_Data science, AI"@en ;
     skos:notation "DI"@de, "DI"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
-    skos:topConceptOf Systematik: .
+    skos:topConceptOf classification: .
 
-Systematik:GA a skos:Concept ;
+Sclassification:GA a skos:Concept ;
     skos:prefLabel "GA_Geowissenschaften, Astrophysik"@de, "GA_Geosciences, Astro physics"@en ;
     skos:altLabel "Geographie, Astronomie"@de, "Geography, Astronomy"@en ;
     skos:notation "GA"@de, "GA"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
-    skos:topConceptOf Systematik: .
-
-Systematik:M a skos:Concept ;
-    skos:prefLabel "M_Mathematik"@de, "M_Mathematics"@en ;
-    skos:altLabel "M_Mathe"@de, "M_Math"@en ;
-    skos:notation "M0-M5"@de, "M0-M5"@en ;
-    skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
-    skos:changeNote "Version 1.2 geändert am 10.05.2021" ;
-    skos:narrower Systematik:M0, Systematik:M1, Systematik:M2, Systematik:M3, Systematik:M4, Systematik:M5 ;
-    skos:topConceptOf Systematik: .
-
-Systematik:M0 a skos:Concept ;
-    skos:prefLabel "M0_Allgemeines, Lehrbücher"@de, "M0_General, Textbooks"@en ;
-    skos:altLabel "M0_Universelles, Fachbücher"@de, "M0_Reference books"@en ;
-    skos:notation "M0"@de, "M0"@en ;
-    skos:inScheme Systematik: .
-
-Systematik:M1 a skos:Concept ;
-    skos:prefLabel "M1_Tabellen, Nachschlagewerke"@de, "M1_Tables, Reference books"@en ;
-    skos:altLabel "M1_Tabellenbuch, Kompendium"@de, "M1_Tablebooks, Compendium"@en ;
-    skos:notation "M1"@de, "M1"@en ;
-    skos:inScheme Systematik: .
-
-Systematik:M2 a skos:Concept ;
-    skos:prefLabel "M2_Algebra, Gruppentheorie, Geometrie, Arimetrie, Zahlentheorie"@de, "M2_Algebra, Group theory, Geometry, Arimetry, Theory of numbers"@en ;
-    skos:altLabel "M2_Allgemeine Algebra, Raumlehre"@de, "M2_General algebra, Spatial science"@en ;
-    skos:notation "M2"@de, "M2"@en ;
-    skos:inScheme Systematik: .
-
-Systematik:M3 a skos:Concept ;
-    skos:prefLabel "M3_Analysis, Funktionsanalysis, Funktionstheorie, Spezielle Funktionen"@de, "M3_Analysis, Functional analysis, Functional theory, Special functions"@en ;
-    skos:altLabel "M3_Analyse, Funktionen"@de, "Functions"@en ;
-    skos:notation "M3"@de, "M3"@en ;
-    skos:inScheme Systematik: .
-
-Systematik:M4 a skos:Concept ;
-    skos:prefLabel "M4_Statistik, Wahrscheinlichkeitsrechnung"@de, "M4_Statistics, Probability calculation"@en ;
-    skos:altLabel "M4_Quantitative Informationen, Wahrscheinlichkeitslehre"@de, "M4_Quantitative information, Probability theory "@en ;
-    skos:notation "M4"@de, "M4"@en ;
-    skos:inScheme Systematik: .
-
-Systematik:M5 a skos:Concept ;
-    skos:prefLabel "M5 Numerische Mathematik"@de, "M5_Numerical mathematics"@en ;
-    skos:altLabel "M5_Numerik"@de, "M5_Numerics"@en ;
-    skos:notation "M5"@de, "M5"@en ;
-    skos:inScheme Systematik: .
+    skos:topConceptOf classification: .
