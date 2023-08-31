@@ -19,8 +19,8 @@ Book:cooking a skos:Concept ;
 
 Book:fiction a skos:Concept ;
     skos:prefLabel "fiction"@en, "Belletristik"@de ;
-    skos:narrower book:historical-novel ;
-    skos:topConceptOf book: .
+    skos:narrower Book:historical-novel ;
+    skos:topConceptOf Book: .
     
 Book:historical-novel a skos:Concept ;
     skos:prefLabel "historical-novel"@en, "Historischer Roman"@de ;
