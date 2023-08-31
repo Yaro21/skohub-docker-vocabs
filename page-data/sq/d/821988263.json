@@ -1,1 +1,1 @@
-{"data":{"allConceptScheme":{"edges":[{"node":{"id":"https://www.dnb.de/DE/Professionell/DDC-Deutsch/ddc-deutsch_node/","fields":{"languages":["en","de"]}}},{"node":{"id":"https://example.org/colour/","fields":{"languages":["en","de"]}}}]}}}
+{"data":{"allConceptScheme":{"edges":[{"node":{"id":"https://www.dnb.de/DE/Professionell/DDC-Deutsch/ddc-deutsch_node/","fields":{"languages":["en","de"]}}},{"node":{"id":"https://www.dnb.de/DE/Professionell/DDC-Deutsch","fields":{"languages":["de","en"]}}}]}}}
